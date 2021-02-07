@@ -1,0 +1,49 @@
+:root {
+    --dark-gray: #333;
+    --light-gray: #ccc;
+    --box-size: 200px;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div{
+    position: relative;
+    width: var(--box-size);
+    height: var(--box-size);
+    border-radius: 4px;
+}
+
+div::after {
+    position: absolute;
+    width: var(--box-size);
+    height: var(--box-size);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    div {
+        background:var(--dark-gray);
+        color: var(--light-gray)
+    }
+
+    div::after {
+        content: 'Your OS using dark mode'
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    div {
+        background: var(--light-gray);
+        color: var(--dark-gray)
+    }
+
+    div::after {
+        content: 'Your OS using lignt mode'
+    }
+}
