@@ -1,0 +1,28 @@
+:root {
+    --box-size: 200px;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div{
+    position: relative;
+    width: var(--box-size);
+    height: var(--box-size);
+    border-radius: 4px;
+    background: var(--box-bg-color, currentColor);
+}
+
+div::after {
+    color: var(--text-color, currentColor);
+    content: var(--text-content, '');
+    position: absolute;
+    width: var(--box-size);
+    height: var(--box-size);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+}

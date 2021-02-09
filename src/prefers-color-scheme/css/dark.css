@@ -1,0 +1,7 @@
+/*@media (prefers-color-scheme: dark) {*/
+    :root {
+        --box-bg-color: #333;
+        --text-color: #ccc;
+        --text-content: 'Your OS using dark mode';
+    }
+/*}*/

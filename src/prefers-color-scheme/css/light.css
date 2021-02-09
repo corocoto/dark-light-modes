@@ -1,0 +1,7 @@
+/*@media (prefers-color-scheme: light) {*/
+:root {
+    --box-bg-color: #ccc;
+    --text-color: #333;
+    --text-content: 'Your OS using light mode';
+}
+/*}*/
