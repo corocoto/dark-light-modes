@@ -1,0 +1,11 @@
+/*The color-scheme CSS property can be used on both the :root level, as well as on an individual per-element level.*/
+
+fieldset {
+    background-color: gainsboro;
+}
+
+@media (prefers-color-scheme: dark) {
+    fieldset {
+        background-color: darkslategray;
+    }
+}
